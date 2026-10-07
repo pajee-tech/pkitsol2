@@ -167,8 +167,25 @@ window.SITE_CONFIG = {
      WordPress.com mShots service (no account needed; the first view of a new
      site can take a few seconds while the screenshot is made).
      Another option: "https://image.thum.io/get/width/1280/crop/800/{rawurl}" */
-  screenshot: {
-    desktop: "https://s.wordpress.com/mshots/v1/{url}?w=1280&h=800",
-    mobile:  "https://s.wordpress.com/mshots/v1/{url}?w=390&h=844&vpw=390&vph=844"
+screenshot: {
+  homyn: {
+    desktop: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fhomyn.org%2F?w=1280&h=800",
+    mobile: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fhomyn.org%2F?w=390&h=844&vpw=390&vph=844"
+  },
+
+  khanabadosh: {
+    desktop: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fkhanabadosh.pk%2F?w=1280&h=800",
+    mobile: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fkhanabadosh.pk%2F?w=390&h=844&vpw=390&vph=844"
+  },
+
+  rosa: {
+    desktop: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Frosastores.pk%2F?w=1280&h=800",
+    mobile: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Frosastores.pk%2F?w=390&h=844&vpw=390&vph=844"
+  },
+
+  apex: {
+    desktop: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fapex.no%2F?w=1280&h=800",
+    mobile: "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fapex.no%2F?w=390&h=844&vpw=390&vph=844"
   }
+}
 };
