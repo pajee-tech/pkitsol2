@@ -12,7 +12,7 @@
  *  reads correctly for search engines and with JavaScript turned off.)
  */
 window.SITE_CONFIG = {
-  name: "PK IT Sol",
+  name: "PK IT SOLUTIONS",
   tagline: "Your Digital Partner",
 
   phone: "+923006540558",          // used for tel: links and shown as text
@@ -155,8 +155,10 @@ window.SITE_CONFIG = {
          mobileImage  optional: your own phone screenshot
          phone        set to false to hide the phone mockup */
     web: [
-      { url: "https://zarwa.store/",         title: "Zarwa Store" },
-      { url: "https://kazmifoundation.com/", title: "Kazmi Foundation" }
+      { url: "https://homyn.org/",         title: "Homyn Events" },
+      { url: "https://khanabadosh.pk/", title: "Khanabadosh Glamps" }
+      { url: "https://rosastores.pk/", title: "Rosa Lifestyle Hub" }
+      { url: "https://apex.no/", title: "Apex Sportsernæring" }
     ]
   },
 
