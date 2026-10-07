@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Web Design and Development | PK IT Sol</title>
+  <meta name="description" content="WordPress, Shopify, e-commerce and custom websites from PK IT Sol. Fast, secure, easy to update and built to be found on Google.">
+  <!-- Not indexed yet. When the page content is final, change this to: index, follow -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1c398e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Web Design and Development | PK IT Sol">
+  <meta property="og:description" content="WordPress, Shopify, e-commerce and custom websites from PK IT Sol. Fast, secure, easy to update and built to be found on Google.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.className += " js";
+    /* Image fallback chain: local file -> data-remote URL -> data-placeholder.
+       Lets the page show the right picture before tools/download-images has been run. */
+    function imgFallback(img) {
+      var remote = img.getAttribute("data-remote"), placeholder = img.getAttribute("data-placeholder");
+      if (remote && !img.getAttribute("data-tried-remote")) { img.setAttribute("data-tried-remote", "1"); img.src = remote; }
+      else if (placeholder && !img.getAttribute("data-tried-placeholder")) { img.setAttribute("data-tried-placeholder", "1"); img.src = placeholder; }
+      else { img.onerror = null; }
+    }
+  </script>
+</head>
+<body>
+
+<!-- Icon sprite: keep this block as it is (same icons as index.html) -->
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+  <!-- solid icons -->
+  <symbol id="i-phone" viewBox="0 0 512 512"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></symbol>
+  <symbol id="i-envelope" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+  <symbol id="i-wordpress" viewBox="0 0 512 512"><path d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"/></symbol>
+  <symbol id="i-store" viewBox="0 0 616 512"><path d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"/></symbol>
+  <symbol id="i-shopify" viewBox="0 0 448 512"><path d="M388.32,104.1a4.66,4.66,0,0,0-4.4-4c-2,0-37.23-.8-37.23-.8s-21.61-20.82-29.62-28.83V503.2L442.76,472S388.72,106.5,388.32,104.1ZM288.65,70.47a116.67,116.67,0,0,0-7.21-17.61C271,32.85,255.42,22,237,22a15,15,0,0,0-4,.4c-.4-.8-1.2-1.2-1.6-2C223.4,11.63,213,7.63,200.58,8c-24,.8-48,18-67.25,48.83-13.61,21.62-24,48.84-26.82,70.06-27.62,8.4-46.83,14.41-47.23,14.81-14,4.4-14.41,4.8-16,18-1.2,10-38,291.82-38,291.82L307.86,504V65.67a41.66,41.66,0,0,0-4.4.4S297.86,67.67,288.65,70.47ZM233.41,87.69c-16,4.8-33.63,10.4-50.84,15.61,4.8-18.82,14.41-37.63,25.62-50,4.4-4.4,10.41-9.61,17.21-12.81C232.21,54.86,233.81,74.48,233.41,87.69ZM200.58,24.44A27.49,27.49,0,0,1,215,28c-6.4,3.2-12.81,8.41-18.81,14.41-15.21,16.42-26.82,42-31.62,66.45-14.42,4.41-28.83,8.81-42,12.81C131.33,83.28,163.75,25.24,200.58,24.44ZM154.15,244.61c1.6,25.61,69.25,31.22,73.25,91.66,2.8,47.64-25.22,80.06-65.65,82.47-48.83,3.2-75.65-25.62-75.65-25.62l10.4-44s26.82,20.42,48.44,18.82c14-.8,19.22-12.41,18.81-20.42-2-33.62-57.24-31.62-60.84-86.86-3.2-46.44,27.22-93.27,94.47-97.68,26-1.6,39.23,4.81,39.23,4.81L221.4,225.39s-17.21-8-37.63-6.4C154.15,221,153.75,239.8,154.15,244.61ZM249.42,82.88c0-12-1.6-29.22-7.21-43.63,18.42,3.6,27.22,24,31.23,36.43Q262.63,78.68,249.42,82.88Z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 576 512"><path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"/></symbol>
+  <symbol id="i-cog" viewBox="0 0 512 512"><path d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"/></symbol>
+  <symbol id="i-bullhorn" viewBox="0 0 576 512"><path d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"/></symbol>
+  <symbol id="i-envelope-open" viewBox="0 0 512 512"><path d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"/></symbol>
+  <symbol id="i-user-friends" viewBox="0 0 640 512"><path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/></symbol>
+  <symbol id="i-video" viewBox="0 0 576 512"><path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 512 512"><path d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/></symbol>
+  <symbol id="i-arrow-top" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm.707 11.707L11 11.414V20h2v-8.586l4.293 4.293 1.414-1.414L12 7.586l-6.707 6.707z"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M18 11.03A6.04 6.04 0 0 0 12.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 0 0 4.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"/></symbol>
+  <!-- outline icons -->
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></g></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></g></symbol>
+  <symbol id="i-circle-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></g></symbol>
+  <symbol id="i-trending-up" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></g></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21v-6"/><path d="M12 21V3"/><path d="M19 21V9"/></g></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></g></symbol>
+  <symbol id="i-file-text" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></g></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></g></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></g></symbol>
+  <symbol id="i-pen-tool" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></g></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line class="plus-v" x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></g></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 5l14 14M19 5 5 19"/></g></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="page" id="top">
+
+  <!-- Floating actions -->
+  <a class="fab fab--top" href="#top" aria-label="Back to top"><svg class="icon"><use href="#i-arrow-top"/></svg></a>
+  <a class="fab fab--whatsapp" data-brand-link="whatsapp" href="https://wa.me/923006540558" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span><svg class="icon"><use href="#i-whatsapp"/></svg></span></a>
+
+  <!-- ================= TOP BAR (desktop) ================= -->
+  <div class="topbar">
+    <div class="topbar__item">
+      <svg class="icon"><use href="#i-phone"/></svg>
+      <a data-brand-link="phone" data-brand="phone" href="tel:+923006540558">+923006540558</a>
+    </div>
+    <nav class="topbar__nav" aria-label="Quick links">
+      <a class="underline-link" href="/">HOME</a>
+      <a class="underline-link" href="/#about">ABOUT US</a>
+      <a class="underline-link" href="/#contact">CONTACT US</a>
+    </nav>
+    <div class="topbar__right">
+      <div class="topbar__item">
+        <svg class="icon icon--lg"><use href="#i-mail"/></svg>
+        <a data-brand-link="email" data-brand="email" href="mailto:pkitsols@gmail.com">pkitsols@gmail.com</a>
+      </div>
+      <div class="topbar__social">
+        <a data-brand-link="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+        <a data-brand-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a data-brand-link="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+        <a data-brand-link="whatsapp" href="https://wa.me/923006540558" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN NAVIGATION ================= -->
+  <header class="site-header" data-header>
+    <div class="navbar">
+      <a class="logo" href="/" aria-label="PK IT Sol, home page" data-brand-label="name">
+        <img class="logo__img" src="assets/img/logo.png" alt="PK IT Sol" width="358" height="145" data-brand-alt="name">
+        <span class="logo__layer logo__layer--ink" aria-hidden="true"></span>
+        <span class="logo__layer logo__layer--accent" aria-hidden="true"></span>
+      </a>
+
+      <nav class="navbar__links" aria-label="Primary">
+        <a class="underline-link" href="/#seo">SEO SERVICES</a>
+        <a class="underline-link" href="/#web">WEB SOLUTIONS</a>
+        <a class="underline-link" href="/#digital">DIGITAL MARKETING</a>
+        <a class="underline-link" href="/#service">OTHER EXPERTISE</a>
+      </nav>
+
+      <a class="btn btn--outline navbar__cta" href="#quote">Get a Quote Now &rarr;</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-nav-toggle>
+        <svg class="icon nav-toggle__open"><use href="#i-menu"/></svg>
+        <svg class="icon nav-toggle__close"><use href="#i-close"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile">
+        <a href="/">Home</a>
+        <a href="/#about">About Us</a>
+        <a href="/#seo">SEO Services</a>
+        <a href="/#web">Web Solutions</a>
+        <a href="/#digital">Digital Marketing</a>
+        <a href="/#service">Other Expertise</a>
+        <a href="/#contact">Contact Us</a>
+      </nav>
+      <div class="mobile-menu__contact">
+        <a data-brand-link="phone" href="tel:+923006540558"><svg class="icon"><use href="#i-phone"/></svg><span data-brand="phone">+923006540558</span></a>
+        <a data-brand-link="email" href="mailto:pkitsols@gmail.com"><svg class="icon"><use href="#i-mail"/></svg><span data-brand="email">pkitsols@gmail.com</span></a>
+      </div>
+      <a class="btn btn--outline" href="#quote">Get a Quote Now &rarr;</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== 1. PAGE HERO ===== -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <ol class="breadcrumb" aria-label="Breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Web Solutions</li>
+      </ol>
+      <h1 id="page-title">Websites That Load Fast, <span>Look Sharp</span> and Bring in Business</h1>
+      <p>From a five-page company site to a full online store, we design and build websites your customers can use easily and your team can update without a developer.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lift" data-brand-link="whatsapp" href="https://wa.me/923006540558" target="_blank" rel="noopener">Book a Strategy Call &rarr;</a>
+        <a class="btn btn--ghost btn--lift" href="#quote">Get a Free Quote</a>
+      </div>
+    </section>
+
+    <!-- ===== 2. WHAT IS INCLUDED ===== -->
+    <section class="section" aria-labelledby="included-title">
+      <div class="section__inner">
+        <header class="section__head">
+          <p class="section__eyebrow">What We Build</p>
+          <h2 id="included-title">The Right Platform for <span>Your Project</span></h2>
+          <p>We recommend the platform that fits your budget and plans, then build on it properly.</p>
+        </header>
+        <div class="card-grid">
+          <article class="service-card">
+            <svg class="icon service-card__icon"><use href="#i-wordpress"/></svg>
+            <h3>WordPress Websites</h3>
+            <p>Company and service websites that are quick to load and simple to edit.</p>
+          </article>
+          <article class="service-card">
+            <svg class="icon service-card__icon"><use href="#i-store"/></svg>
+            <h3>E-commerce Stores</h3>
+            <p>Online shops with payments, shipping and stock set up and tested.</p>
+          </article>
+          <article class="service-card">
+            <svg class="icon service-card__icon"><use href="#i-shopify"/></svg>
+            <h3>Shopify Solutions</h3>
+            <p>Custom Shopify themes and apps for a smooth path from product to checkout.</p>
+          </article>
+          <article class="service-card">
+            <svg class="icon service-card__icon"><use href="#i-code"/></svg>
+            <h3>Custom Development</h3>
+            <p>Web apps and portals built around the way your business works.</p>
+          </article>
+          <article class="service-card">
+            <svg class="icon service-card__icon"><use href="#i-pen-tool"/></svg>
+            <h3>UI / UX Design</h3>
+            <p>Layouts planned around your visitors, designed before a line of code is written.</p>
+          </article>
+          <article class="service-card">
+            <svg class="icon service-card__icon"><use href="#i-headset"/></svg>
+            <h3>Care and Support</h3>
+            <p>Updates, backups, security checks and small changes handled for you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. HOW WE WORK ===== -->
+    <section class="section section--tint" aria-labelledby="process-title">
+      <div class="section__inner">
+        <header class="section__head">
+          <p class="section__eyebrow">How We Work</p>
+          <h2 id="process-title">From First Call to <span>Launch Day</span></h2>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <h3>Discover</h3>
+            <p>We learn about your business, your customers and what the site has to achieve.</p>
+          </li>
+          <li class="step">
+            <h3>Design</h3>
+            <p>You review the page layouts and the look of the site before we build.</p>
+          </li>
+          <li class="step">
+            <h3>Build</h3>
+            <p>We develop the site, add your content and test it on phones, tablets and desktops.</p>
+          </li>
+          <li class="step">
+            <h3>Launch</h3>
+            <p>We put the site live, connect analytics and show your team how to update it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 4. RESULTS (optional) ===== -->
+    <section class="section section--tint" id="results" aria-labelledby="results-title">
+      <div class="section__inner">
+        <header class="section__head">
+          <p class="section__eyebrow">Results</p>
+          <h2 id="results-title">Recent <span>Websites</span></h2>
+        </header>
+        <!-- Website mockups, read from js/config.js (portfolio.web) -->
+        <div class="mockups" data-portfolio="web"></div>
+      </div>
+    </section>
+
+    <!-- ===== 5. QUESTIONS ===== -->
+    <section class="section" aria-labelledby="sfaq-title">
+      <div class="section__inner">
+        <header class="section__head">
+          <h2 id="sfaq-title">Website <span>Questions</span> We Hear Often</h2>
+        </header>
+        <div class="faq"><div class="faq__list" data-accordion>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="sfaq-1"><span>How long does a website take?</span><svg class="icon"><use href="#i-plus"/></svg></button></h3>
+            <div class="faq__a" id="sfaq-1" role="region"><div><p>It depends on the number of pages and features. After the first call we give you a timeline in writing and keep you updated at each stage.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="sfaq-2"><span>Can I update the site myself?</span><svg class="icon"><use href="#i-plus"/></svg></button></h3>
+            <div class="faq__a" id="sfaq-2" role="region"><div><p>Yes. We build on platforms with an editor your team can use, and we walk you through adding pages, products and posts.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="sfaq-3"><span>Do you redesign existing websites?</span><svg class="icon"><use href="#i-plus"/></svg></button></h3>
+            <div class="faq__a" id="sfaq-3" role="region"><div><p>Yes. We keep what is working, move your content across and set up redirects so you do not lose your search rankings.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="sfaq-4"><span>Do you handle domain and hosting?</span><svg class="icon"><use href="#i-plus"/></svg></button></h3>
+            <div class="faq__a" id="sfaq-4" role="region"><div><p>We can set both up for you or work with what you already have. Either way the accounts stay in your name.</p></div></div>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICE FORM: submissions are emailed (see "forms" in js/config.js) ===== -->
+    <section class="quote" id="quote" aria-labelledby="quote-title">
+      <div class="quote__card">
+        <h2 class="quote__title" id="quote-title">Request a <span>FREE Quote</span> Now!</h2>
+        <form class="quote-form" data-form="Web Quote" novalidate>
+          <div class="field">
+            <label for="q-name">Full Name *</label>
+            <input id="q-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="q-email">Your Email Address *</label>
+            <input id="q-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="q-website">Website</label>
+              <input id="q-website" name="website" type="text" inputmode="url" autocomplete="url">
+            </div>
+            <div class="field">
+              <label for="q-company">Company *</label>
+              <input id="q-company" name="company" type="text" autocomplete="organization" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="q-phone">Phone Number *</label>
+            <input id="q-phone" name="phone" type="tel" placeholder="(000) 000-0000" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="q-budget">Project Budget *</label>
+            <select id="q-budget" name="budget" required>
+              <option value="">Select project budget</option>
+              <option>23,000 PKR - 50,000 PKR / month</option>
+              <option>50,000 PKR - 65,000 PKR / month</option>
+              <option>65,000 PKR - 80,000 PKR / month</option>
+              <option>80,000 PKR - 100,000 PKR / month</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="q-message">Comments or Questions</label>
+            <textarea id="q-message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--dark btn--block" type="submit">Submit Request</button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__cta">
+      <div>
+        <h2>Looking for the Right IT Partner for Your Business?</h2>
+        <p>Our web and digital team helps you grow online with solutions that are practical, smart and built to scale.</p>
+      </div>
+      <a class="btn btn--light" href="#quote">Get Free Consultation</a>
+    </div>
+
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <div>
+          <h3 data-brand="nameUpper">PK IT SOL</h3>
+          <p class="footer__tagline" data-brand="taglineUpper">YOUR DIGITAL PARTNER</p>
+        </div>
+        <p>We enjoy solving hard problems and turning good ideas into digital products that work.</p>
+        <div class="footer__social">
+          <a data-brand-link="facebook" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"/></svg></a>
+          <a data-brand-link="instagram" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+          <a data-brand-link="linkedin" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">Services</h3>
+        <ul class="footer__links">
+          <li><a href="seo-services.html">SEO Services</a></li>
+          <li><a href="web-solutions.html">Web Solutions</a></li>
+          <li><a href="digital-marketing.html">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">Reach Us</h3>
+        <ul class="footer__reach">
+          <li><svg class="icon"><use href="#i-pin"/></svg><span data-brand="address">Plaza Number 55, Office Number 505 5th Floor, Civic Center Bahria Town Phase 4 Bahria Town, Islamabad, 44000</span></li>
+          <li><svg class="icon"><use href="#i-phone"/></svg><a data-brand-link="phone" data-brand="phone" href="tel:+923006540558">+923006540558</a></li>
+          <li><svg class="icon"><use href="#i-envelope"/></svg><a data-brand-link="email" data-brand="email" href="mailto:pkitsols@gmail.com">pkitsols@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy">&copy; <span data-year>2026</span> <strong data-brand="name">PK IT Sol</strong> | All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- "Real Result" panel for SEO projects (filled in by js/main.js) -->
+<dialog class="result" data-result-dialog aria-labelledby="result-title">
+  <header class="result__head">
+    <h4 id="result-title" data-result-title></h4>
+    <p data-result-project>PROJECT: <a data-result-link href="#" target="_blank" rel="noopener">VISIT WEBSITE</a></p>
+    <div class="result__actions">
+      <a class="btn btn--outline" href="seo-services.html#quote" data-result-proposal>Send Me a Proposal</a>
+      <button class="result__close" type="button" data-result-close aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+  </header>
+  <div class="result__figures" data-result-images></div>
+  <div data-result-table-wrap>
+    <p class="result__hint">Tip: click a rank number to open the Google search screenshot for that keyword.</p>
+    <div class="result__scroll">
+      <table class="result__table">
+        <thead><tr><th scope="col">#</th><th scope="col">Keywords</th><th scope="col">Rank Position</th><th scope="col">Ranked Links in SERPs</th></tr></thead>
+        <tbody data-result-rows></tbody>
+      </table>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
